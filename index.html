@@ -60,7 +60,10 @@
                 <p class="hero-subtitle">Pare de perder horas do seu tempo de descanso planejando aulas para a próxima semana.</p>
                 
                 <div class="hero-image-wrapper">
-                    <img src="/hero-image.png" alt="Planos de Aula Prontos para o Ano Todo" class="hero-main-image">
+                    <picture>
+                        <source srcset="/hero-image.webp" type="image/webp">
+                        <img src="/hero-image.png" alt="Planos de Aula Prontos para o Ano Todo" class="hero-main-image" width="900" fetchpriority="high">
+                    </picture>
                 </div>
                 
                 <button class="cta-button hero-cta" onclick="scrollToPlans()">
