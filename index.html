@@ -26,7 +26,6 @@
       async
       defer
     ></script>
-    <script src="https://cdn.wiapy.com/upsell/upsell.js"></script>
 </head>
 <body>
     <!-- Topo com aviso de urgência -->
@@ -139,19 +138,26 @@
                     </ul>
                     <div id="wiapy_upsell"></div>
                     <script>
-                    initWiapyUpsell({
-                        linkUrl: "https://pay.wiapy.com/checkout/6a0f0931a3c7521472aa62ba",
-                        linkText: "QUERO OS PLANOS DE AULAS",
-                        styles: {
-                            backgroundColor: "#00d769",
-                            hoverBackgroundColor: "#00b85a",
-                            fontSize: "17px",
-                            borderRadius: "10px"
-                        },
-                        refusalLinkUrl: "https://wiapy.com/login",
-                        refusalLinkText: "Continuar para as Dinâmicas",
-                        refusalLinkColor: "#000000"
-                    });
+                    function runWiapyUpsell() {
+                        if (typeof initWiapyUpsell === 'function') {
+                            initWiapyUpsell({
+                                linkUrl: "https://pay.wiapy.com/checkout/6a0f0931a3c7521472aa62ba",
+                                linkText: "QUERO OS PLANOS DE AULAS",
+                                styles: {
+                                    backgroundColor: "#00d769",
+                                    hoverBackgroundColor: "#00b85a",
+                                    fontSize: "17px",
+                                    borderRadius: "10px"
+                                },
+                                refusalLinkUrl: "https://wiapy.com/login",
+                                refusalLinkText: "Continuar para as Dinâmicas",
+                                refusalLinkColor: "#000000"
+                            });
+                        } else {
+                            setTimeout(runWiapyUpsell, 200);
+                        }
+                    }
+                    document.addEventListener('DOMContentLoaded', runWiapyUpsell);
                     </script>
                 </div>
             </div>
