@@ -23,8 +23,8 @@ function toggleFaq(element) {
 
 // Contador regressivo dos planos - inicia em 1:35:33
 function startPlansCountdown() {
-    // Define o tempo inicial: 1 hora, 35 minutos e 33 segundos
-    const initialTime = (1 * 60 * 60) + (35 * 60) + 33; // em segundos
+    // Define o tempo inicial: 15 minutos
+    const initialTime = 15 * 60; // em segundos
     const now = new Date().getTime();
     const countdownTime = now + (initialTime * 1000);
     
