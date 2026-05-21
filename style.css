@@ -330,6 +330,10 @@ section {
     letter-spacing: -1px;
 }
 
+.font-extrabold {
+    font-weight: 900;
+}
+
 .section-title::after {
     content: '';
     width: 100px;
