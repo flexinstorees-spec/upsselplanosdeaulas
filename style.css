@@ -794,7 +794,7 @@ section {
 .plan-card.popular {
     border: 3px solid #A855F7;
     transform: none;
-    background: linear-gradient(180deg, #faf5ff 0%, #ffffff 100%);
+    background: #ffffff;
     margin-top: 20px;
 }
 
