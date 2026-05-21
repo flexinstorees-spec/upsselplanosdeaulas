@@ -348,6 +348,29 @@ section {
     padding: 100px 0;
 }
 
+.app-screenshots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.app-screenshot-img {
+    width: calc(50% - 12px);
+    min-width: 280px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    object-fit: cover;
+}
+
+@media (max-width: 700px) {
+    .app-screenshot-img {
+        width: 100%;
+    }
+}
+
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
