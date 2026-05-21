@@ -751,6 +751,11 @@ section {
     margin: 0 auto;
 }
 
+.plans-grid.single-plan {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+}
+
 .plan-card {
     background: white;
     padding: 30px 25px;
