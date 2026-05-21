@@ -384,7 +384,7 @@ section {
     width: calc(50% - 12px);
     min-width: 280px;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    box-shadow: none;
     object-fit: cover;
 }
 
@@ -759,7 +759,7 @@ section {
 
 /* Planos de Preços */
 .pricing-plans {
-    background: var(--light-gray);
+    background: #ffffff;
 }
 
 .plans-grid {
@@ -826,7 +826,7 @@ section {
     margin: 0 auto 18px;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    box-shadow: none;
     max-width: 100%;
 }
 
