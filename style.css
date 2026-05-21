@@ -795,11 +795,12 @@ section {
     border: 3px solid #A855F7;
     transform: none;
     background: linear-gradient(180deg, #faf5ff 0%, #ffffff 100%);
+    margin-top: 20px;
 }
 
 .popular-badge {
     position: absolute;
-    top: -15px;
+    top: -18px;
     left: 50%;
     transform: translateX(-50%);
     background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 50%, #C084FC 100%);
@@ -810,6 +811,7 @@ section {
     font-size: 0.9rem;
     text-transform: uppercase;
     box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+    white-space: nowrap;
 }
 
 .plan-card h3 {
