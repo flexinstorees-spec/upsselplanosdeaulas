@@ -135,16 +135,6 @@ body {
     text-shadow: 0 2px 10px rgba(168, 85, 247, 0.3);
 }
 
-.highlight-title {
-    color: #10B981;
-    font-weight: 800;
-    position: relative;
-    display: inline-block;
-    text-shadow: 0 2px 12px rgba(16, 185, 129, 0.35);
-    border-bottom: 4px solid #FBBF24;
-    padding-bottom: 2px;
-}
-
 .bonus-text {
     color: var(--primary-green);
     font-weight: 800;
