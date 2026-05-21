@@ -462,6 +462,19 @@ section {
     margin: 0 auto;
 }
 
+.bonus-label {
+    display: inline-block;
+    background: linear-gradient(135deg, #8B5CF6, #C084FC);
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
 .exclusive-card {
     text-align: center;
     padding: 40px 30px;
