@@ -26,6 +26,7 @@
       async
       defer
     ></script>
+    <script src="https://cdn.wiapy.com/upsell/upsell.js"></script>
 </head>
 <body>
     <!-- Topo com aviso de urgência -->
@@ -136,7 +137,22 @@
                         <li class="bonus-item"><i class="fas fa-gift"></i> BÔNUS 3: 50 Tarefas de Casa Prontas</li>
                         <li><i class="fas fa-check"></i> Garantia de 7 dias</li>
                     </ul>
-                    <a href="#" class="plan-button premium-button"><i class="fas fa-shopping-cart"></i> QUERO COMPRAR AGORA!</a>
+                    <div id="wiapy_upsell"></div>
+                    <script>
+                    initWiapyUpsell({
+                        linkUrl: "https://pay.wiapy.com/checkout/6a0f0931a3c7521472aa62ba",
+                        linkText: "QUERO OS PLANOS DE AULAS",
+                        styles: {
+                            backgroundColor: "#00d769",
+                            hoverBackgroundColor: "#00b85a",
+                            fontSize: "17px",
+                            borderRadius: "10px"
+                        },
+                        refusalLinkUrl: "https://wiapy.com/login",
+                        refusalLinkText: "Continuar para as Dinâmicas",
+                        refusalLinkColor: "#000000"
+                    });
+                    </script>
                 </div>
             </div>
         </div>
