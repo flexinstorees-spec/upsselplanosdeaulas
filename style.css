@@ -817,9 +817,24 @@ section {
 .plan-card h3 {
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     color: var(--dark-gray);
     text-align: center;
+}
+
+.plan-thumbnail {
+    margin: 0 auto 18px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    max-width: 100%;
+}
+
+.plan-thumb-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
 }
 
 .price {
